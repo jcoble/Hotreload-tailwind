@@ -5,23 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatSliderModule } from '@angular/material/slider'
-import { MatButtonModule } from '@angular/material/button'
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
+import { IgxButtonModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-MatSliderModule,
-MatButtonModule
-,
+    MatSliderModule,
+    MatButtonModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    IgxButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
